@@ -42,7 +42,7 @@ try {
 
   console.log(`Uploading to Dependency-Track server ${serverHostname}...`);
 
-  const req = https.request(requestOptions, (res) => {
+  const req = http.request(requestOptions, (res) => {
     console.log('Response status code:', res.statusCode);
     if (res.statusCode >= 200 && res.statusCode < 300) {
       console.log('Finished uploading BOM to Dependency-Track server.')

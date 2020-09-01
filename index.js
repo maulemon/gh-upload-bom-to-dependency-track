@@ -1,5 +1,6 @@
 const fs = require('fs');
 const https = require('https');
+const http = require('http');
 const core = require('@actions/core');
 
 try {
